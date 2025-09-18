@@ -1,7 +1,54 @@
-body,
-html {
-  /* height:100%; */
+/* Head */
 
+
+body, html {
+  /* height:100%; */
   margin: 0px;
   padding: 0px;
+}
+header {
+  background-color: #aeb7b1;
+}
+header h1 {
+  text-align: left;
+}
+
+nav ul {
+   text-align: right;
+}
+
+
+/* Body */
+
+
+#app{
+
+  display: grid;
+  grid-template-rows: auto 4fr auto;
+  min-height: 100vh;
+
+}
+
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  background-color: Azure;
+}
+
+
+.store-item img {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+}
+
+
+/* Footer */
+
+
+footer{
+  background-color: #aeb7b1;
+  text-align: center;
 }
