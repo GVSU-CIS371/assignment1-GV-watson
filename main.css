@@ -1,6 +1,5 @@
 
 /* General layout */ 
-
 *{
     box-sizing: border-box;
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -21,7 +20,6 @@ body, html {
 }
 
 /* Head */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -54,33 +52,44 @@ footer{
   text-align: center;
 }
 
-
 /* Body */
-
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  width: 100%;
   gap: 1rem;
   padding: 1rem;
-  width: 100%;
+  
 }
 
-.store-item{
-  height: 100%;
-  padding: 0.5rem;
-
-  border: 1px solid #000000;
+.store-item {
+  align-items: center;
+  padding: 1rem;
 
   border-radius: 5px;
-  background-color: hsl(0, 0%, 100%);
-  
+  border: 1px solid #000;
 }
 
 .store-item img {
   width: auto;
   height: 8rem;
-  background-color: hsl(251, 100%, 18%);
 }
 
+.store-item p:first-of-type {
+  text-align: left;
+  font-weight: bold;
+  margin: 1rem 0;
+}
 
+.store-item p:nth-of-type(2) {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.store-item span:nth-last-of-type(2),
+.store-item span:nth-last-of-type(1) {
+  display: inline-block;
+  margin-left: 1rem;
+}
