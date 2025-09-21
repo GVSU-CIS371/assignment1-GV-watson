@@ -1,7 +1,106 @@
-body,
-html {
-  /* height:100%; */
 
+/* General layout */ 
+*{
+    box-sizing: border-box;
+    /*font-family: "Comic Sans MS", cursive, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
   margin: 0px;
   padding: 0px;
 }
+
+#app{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Head */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+  background-color: #aeb7b1;
+}
+
+
+header h1 {
+  color: #000;
+  text-align: left;
+
+  margin: 0;
+}
+
+nav ul {
+  color: #000;
+
+  display: flex;
+  list-style: none;
+  text-align: right;
+
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  background-color: #aeb7b1;
+
+  text-align: center;
+}
+
+/* Body */
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+  
+}
+
+.store-item {
+  align-items: center;
+  padding: 1rem;
+
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.store-item img {
+  width: auto;
+  height: 8rem;
+}
+
+.store-item p:first-of-type {
+  text-align: left;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.store-item p:nth-of-type(2) {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.store-item span:nth-last-of-type(2),
+.store-item span:nth-last-of-type(1) {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* got this idea from class mate */
+.store-item:hover {
+  transform: scale(.9);
+ 
+}
+
